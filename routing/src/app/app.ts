@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import {RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink],
-  template: ` <nav>
-      <a routerLink="/home">Home</a> || <a routerLink="/about">About</a> ||
-      <a routerLink="/contact">Contact</a>
-    </nav>
+  imports: [RouterOutlet, ],
+  template: ` 
     <router-outlet> </router-outlet>`,
   styleUrl: './app.css',
 })
